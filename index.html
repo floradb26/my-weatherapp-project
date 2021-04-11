@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1d01eeebd0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <head>
+            <form class="search-form" id="search-form">
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city-input"
+                    placeholder="Enter your city"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn btn-outline-danger shadow-sm"
+                  />
+                </div>
+              </div>
+            </form>
+          </head>
+          <h1>
+            <div id="city">Brussels</div>
+            <div id="date">Monday, 10:00</div>
+            <div id="description">Clouds</div>
+          </h1>
+          <h3>
+            <div id="pressure">Pressure: 1 mB</div>
+            <div id="humidity">Humidity: 51%</div>
+            <div id="wind">Wind: 11 km/h</div>
+          </h3>
+          <section>
+            <h2><span id="temperature">8</span>°C</h2>
+          </section>
+          <footer>
+            <div class="container">
+              <div class="row row-cols-5">
+                <div class="col">
+                  Monday
+                  <br />
+                  <i class="fas fa-cloud-sun"></i>
+                  <br />
+                  8°C
+                </div>
+                <div class="col">
+                  Tuesday
+                  <br />
+                  <i class="fas fa-cloud-rain"></i>
+                  <br />
+                  9°C
+                </div>
+                <div class="col">
+                  Wednesday
+                  <br />
+                  <i class="fas fa-cloud-rain"></i>
+                  <br />
+                  10°C
+                </div>
+                <div class="col">
+                  Thursday
+                  <br />
+                  <i class="fas fa-cloud-rain"></i>
+                  <br />
+                  12°C
+                </div>
+                <div class="col">
+                  Friday
+                  <br />
+                  <i class="fas fa-cloud-rain"></i>
+                  <br />
+                  11°C
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
