@@ -46,3 +46,11 @@ footer {
 .card-body {
   font-size: 15px;
 }
+
+.signature {
+  color: black;
+  font-size: 10px;
+  font-family: monospace;
+  margin: 40px auto;
+  text-align: center;
+}
