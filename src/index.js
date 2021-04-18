@@ -43,6 +43,9 @@ function showWeather(response) {
     celsiusTemperature
   );
   document.querySelector(
+    "#rain"
+  ).innerHTML = `Precipitation: ${response.data.weather.precipitation} mm`;
+  document.querySelector(
     "#wind"
   ).innerHTML = `Wind: ${response.data.wind.speed} km/h`;
   document.querySelector(
@@ -58,6 +61,8 @@ function showWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
   );
 }
+
+console.log(rain);
 
 // Function for units change
 
