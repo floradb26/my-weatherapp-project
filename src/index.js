@@ -137,16 +137,20 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
-function searchCity(event) {
-  event.preventDefault();
-
-  let city = document.querySelector("#city-input").value;
+function search(city) {
   let apiKey = "2de757d719affbba26c5f5c558d276fc";
   let unit = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
-
   axios.get(apiUrl).then(showWeather);
 }
+
+function searchCity(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Brussels");
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
