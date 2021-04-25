@@ -29,6 +29,26 @@ let currentDate = document.querySelector("#date");
 let newDate = new Date();
 currentDate.innerHTML = formatDate(newDate);
 
+// Function for the forecast
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row row-cols-5">`;
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+      <div class="weather-forecast-day">${day}</div>
+        <i class="fas fa-cloud-sun"></i>
+          <div class="weather-forecast-temperature">8°C</div>
+    </div>
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 // Function for city search
 
 function showWeather(response) {
@@ -58,8 +78,6 @@ function showWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
   );
 }
-
-console.log(rain);
 
 // Function for units change
 
@@ -101,3 +119,5 @@ function searchCity(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
+
+displayForecast();
