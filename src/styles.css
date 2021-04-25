@@ -104,6 +104,10 @@ a {
   color: #cd7f4f;
 }
 
+.handwritting {
+  font-family: "Pacifico", cursive;
+}
+
 .lowercase {
   text-transform: lowercase;
 }
