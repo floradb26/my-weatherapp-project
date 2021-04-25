@@ -43,9 +43,6 @@ function showWeather(response) {
     celsiusTemperature
   );
   document.querySelector(
-    "#rain"
-  ).innerHTML = `Precipitation: ${response.data.weather.precipitation} mm`;
-  document.querySelector(
     "#wind"
   ).innerHTML = `Wind: ${response.data.wind.speed} km/h`;
   document.querySelector(
