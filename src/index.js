@@ -29,7 +29,6 @@ let currentDate = document.querySelector("#date");
 let newDate = new Date();
 currentDate.innerHTML = formatDate(newDate);
 
-// Check this
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -59,9 +58,11 @@ function displayForecast(response) {
       alt=""
       width="42"
                 />
-          <div class="weather-forecast-temperature">${Math.round(
-            forecastDay.temp.max
-          )}°C</div>
+          <div class="weather-forecast-temperature"> min: ${Math.round(
+            forecastDay.temp.min
+          )} °C 
+          <br/>
+           max: ${Math.round(forecastDay.temp.max)}°C</div>
     </div>
   `;
     }
