@@ -1,12 +1,13 @@
 body {
-  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
-  background-size: 100%;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button {
   display: inline;
   height: 45px;
   padding: 10px;
+  color: #ff0001;
 }
 
 h1,
@@ -15,39 +16,42 @@ h3 {
 }
 
 h1 {
-  color: #e9005d;
+  color: #cd7f4f;
   font-size: 20px;
   margin-top: 0.5rem;
 }
 
 h3 {
-  color: #e9005d;
+  color: #cd7f4f;
   font-size: 13px;
 }
 
 section {
   margin: 50px;
+  font-family: "Days One", sans-serif;
 }
 
 section h2 {
   font-size: 60px;
-  color: #e9005d;
+  color: #cd7f4f;
   text-align: center;
 }
 
 img {
   height: 100px;
+  background-color: #e5c8be;
+  border-radius: 28px;
   margin-bottom: 10px;
   width: 100px;
 }
 
 footer {
   text-align: center;
-  color: #e9005d;
+  color: #d28755;
 }
 
 .card {
-  background: rgba(255, 145, 0, 0.411);
+  background: #f6edeb;
   border: none;
   padding: 20px;
   display: block;
@@ -59,6 +63,22 @@ footer {
   font-size: 15px;
 }
 
+.btn {
+  color: #ff0001;
+  background-color: #f6edeb;
+}
+
+.btn:hover {
+  color: #f6edeb;
+  background-color: #ff0001;
+  border: none;
+}
+
+.cityTitle {
+  font-family: "Days One", sans-serif;
+  color: #ff0001;
+}
+
 .units {
   font-size: 15px;
   line-height: 24px;
@@ -66,13 +86,21 @@ footer {
 }
 
 .temperatureUnits .active {
-  color: #e9005d;
+  color: #d28755;
   cursor: default;
   text-decoration: none;
 }
 
 .temperatureUnits .active:hover {
   text-decoration: none;
+}
+
+a {
+  color: #ff0001;
+}
+
+.col {
+  color: #cd7f4f;
 }
 
 .lowercase {

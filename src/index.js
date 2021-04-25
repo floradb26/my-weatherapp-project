@@ -93,10 +93,10 @@ function showWeather(response) {
   );
   document.querySelector(
     "#wind"
-  ).innerHTML = `Wind: ${response.data.wind.speed} km/h`;
+  ).innerHTML = `<b>Wind:</b> ${response.data.wind.speed} km/h`;
   document.querySelector(
     "#humidity"
-  ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
+  ).innerHTML = `<b>Humidity:</b> ${response.data.main.humidity}%`;
 
   mainIcon.setAttribute(
     "src",

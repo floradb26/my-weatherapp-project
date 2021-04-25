@@ -10,6 +10,11 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/1d01eeebd0.js"
@@ -45,13 +50,13 @@
             </form>
           </head>
           <h1>
-            <div id="city">Brussels</div>
+            <div class="cityTitle" id="city">Brussels</div>
             <div id="date">Monday, 10:00</div>
             <div id="description">Clouds</div>
           </h1>
           <h3>
-            <div id="humidity">Humidity: 51%</div>
-            <div id="wind">Wind: 11 km/h</div>
+            <div id="humidity"><b>Humidity:</b> 51%</div>
+            <div id="wind"><b>Wind:</b> 11 km/h</div>
           </h3>
           <section>
             <h2>
@@ -71,6 +76,33 @@
           </section>
           <footer>
             <div class="weather-forecast" id="forecast"></div>
+            <div class="row row-cols-5">
+              <div class="col">
+                <div class="weather-forecast-day"></div>
+                <img src="" alt=""" id="" />
+                <div class="weather-forecast-temperature"></div>
+              </div>
+              <div class="col">
+                <div class="weather-forecast-day"></div>
+                <img src="" alt="" id="" />
+                <div class="weather-forecast-temperature"></div>
+              </div>
+              <div class="col">
+                <div class="weather-forecast-day"></div>
+                <img src="" alt="" id="" />
+                <div class="weather-forecast-temperature"></div>
+              </div>
+              <div class="col">
+                <div class="weather-forecast-day"></div>
+                <img src="" alt="" id="" />
+                <div class="weather-forecast-temperature"></div>
+              </div>
+              <div class="col">
+                <div class="weather-forecast-day"></div>
+                <img src="" alt="" id="" />
+                <div class="weather-forecast-temperature"></div>
+              </div>
+            </div>
           </footer>
         </div>
       </div>
