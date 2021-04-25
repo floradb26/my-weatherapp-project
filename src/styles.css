@@ -1,7 +1,6 @@
 body {
   background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
   background-size: 100%;
-  text-transform: capitalize;
 }
 
 button {
@@ -10,9 +9,15 @@ button {
   padding: 10px;
 }
 
+h1,
+h3 {
+  text-transform: capitalize;
+}
+
 h1 {
   color: #e9005d;
   font-size: 20px;
+  margin-top: 0.5rem;
 }
 
 h3 {
@@ -28,6 +33,12 @@ section h2 {
   font-size: 60px;
   color: #e9005d;
   text-align: center;
+}
+
+img {
+  height: 100px;
+  margin-bottom: 10px;
+  width: 100px;
 }
 
 footer {
@@ -66,12 +77,6 @@ footer {
 
 .lowercase {
   text-transform: lowercase;
-}
-
-img {
-  height: 100px;
-  margin-bottom: 10px;
-  width: 100px;
 }
 
 .signature {
