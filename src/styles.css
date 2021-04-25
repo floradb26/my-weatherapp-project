@@ -53,6 +53,7 @@ footer {
 .card {
   background: #f6edeb;
   border: none;
+  box-shadow: 12px 12px 2px 1px rgb(193 193 241 / 20%);
   padding: 20px;
   display: block;
   margin: 100px auto;
