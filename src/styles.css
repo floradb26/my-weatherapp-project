@@ -1,5 +1,7 @@
 body {
   background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
